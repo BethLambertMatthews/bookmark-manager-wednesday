@@ -1,0 +1,7 @@
+<% @bookmarks_list.each do | bookmark | %>
+
+<a id='bookmark_url' href= "<%=bookmark.url%>">
+  <p><%= bookmark.name %></p> 
+</a>
+
+<% end %>
