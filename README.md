@@ -10,32 +10,30 @@ https://github.com/makersacademy/course/blob/main/apprenticeships_bookmark_manag
 
 ## Overview
 
-You're going to build a bookmark manager. A bookmark manager is a website to maintain a collection of bookmarks (URLs). 
-You can use it to save a webpage you found useful. 
-You can add tags to the webpages you saved to find them later. 
-You can browse bookmarks other users have added. 
+You're going to build a bookmark manager. A bookmark manager is a website to maintain a collection of bookmarks (URLs).
+You can use it to save a webpage you found useful.
+You can add tags to the webpages you saved to find them later.
+You can browse bookmarks other users have added.
 You can comment on the bookmarks.
-
 
 The website will have the following specification:
 
-* Show a list of bookmarks
-* Add new bookmarks
-* Delete bookmarks
-* Update bookmarks
-* Comment on bookmarks
-* Tag bookmarks into categories
-* Filter bookmarks by tag
-* Users are restricted to manage only their own bookmarks
+- Show a list of bookmarks
+- Add new bookmarks
+- Delete bookmarks
+- Update bookmarks
+- Comment on bookmarks
+- Tag bookmarks into categories
+- Filter bookmarks by tag
+- Users are restricted to manage only their own bookmarks
 
 A specification is a list of requirements.
 
 To complete this challenge, you will need to:
 
-* Write a user story for showing a list of bookmarks
-* Draw a rough domain model for the above
-* Put the user story and a snap of your domain model in your project README
-
+- Write a user story for showing a list of bookmarks
+- Draw a rough domain model for the above
+- Put the user story and a snap of your domain model in your project README
 
 ## First User Story
 
@@ -45,12 +43,16 @@ So that I can access my favourite sites
 I want to see a list of bookmarks
 ```
 
+| Nouns / Objects   | Verbs / actions           |
+| ----------------- | ------------------------- |
+| List of bookmarks | See a list of bookmarks   |
+| Bookmark          | Access my favourite sites |
+| Favourite sites   |                           |
+| User              |                           |
 
-| Nouns / Objects |	Verbs / actions |
-|-----|-----|
-| List of bookmarks	| See a list of bookmarks |
-| Bookmark	| Access my favourite sites
-| Favourite sites |	 |
-| User	| |
+## Database setup
 
- 
+- install Postgres `brew install postgresql`
+- start up the service `brew services start postgresql`
+- Create the database using `CREATE DATABASE bookmark_manager;` in the psql cli
+- Find the table queries in `db/migrations/`
