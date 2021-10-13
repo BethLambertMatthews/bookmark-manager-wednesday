@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/bethlambertmatthews/Programming/pair-programming/bookmark-manager-tuesday/spec/features/bookmarks_spec.rb": {
+      "/Users/bethlambertmatthews/Programming/pair-programming/bookmark-manager-wednesday/spec/features/bookmarks_spec.rb": {
         "lines": [
           1,
           1,
@@ -17,7 +17,7 @@
           null
         ]
       },
-      "/Users/bethlambertmatthews/Programming/pair-programming/bookmark-manager-tuesday/spec/features/index_test_spec.rb": {
+      "/Users/bethlambertmatthews/Programming/pair-programming/bookmark-manager-wednesday/spec/features/index_test_spec.rb": {
         "lines": [
           1,
           1,
@@ -27,7 +27,7 @@
           null
         ]
       },
-      "/Users/bethlambertmatthews/Programming/pair-programming/bookmark-manager-tuesday/spec/lib/bookmark_spec.rb": {
+      "/Users/bethlambertmatthews/Programming/pair-programming/bookmark-manager-wednesday/spec/lib/bookmark_spec.rb": {
         "lines": [
           1,
           null,
@@ -45,6 +45,6 @@
         ]
       }
     },
-    "timestamp": 1634048894
+    "timestamp": 1634132215
   }
 }
