@@ -56,3 +56,17 @@ I want to see a list of bookmarks
 - start up the service `brew services start postgresql`
 - Create the database using `CREATE DATABASE bookmark_manager;` in the psql cli
 - Find the table queries in `db/migrations/`
+
+
+# UPDATE WED 13 OCT
+
+Started new branch to refactor bookmark class.
+
+Happy that the database has several columns, including url and name.
+
+However - not sure how to return a map that can cope with the names columns as well as the url. Causing failures in the tests.
+
+So: refactor database structure, bookmark class and tests to output ONLY urls at the moment. Simpler to test?
+
+
+
