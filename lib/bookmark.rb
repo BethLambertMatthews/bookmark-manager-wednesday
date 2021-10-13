@@ -1,3 +1,5 @@
+require 'pg'
+
 class Bookmark
 
   attr_reader :name, :url
@@ -8,14 +10,10 @@ class Bookmark
   end
 
   def self.all
-    # bookmark_1 = Bookmark.new('Google', 'www.google.co.uk')
-    # bookmark_2 = Bookmark.new('Github', 'www.github.com')
-    # bookmark_3 = Bookmark.new('Amazon', 'www.amazon.co.uk')
-    # return [bookmark_1, bookmark_2, bookmark_3]
-
-    # CALL THE DATABASE HERE
-
-    
+    connection = PG.connect(dbname: 'bookmark_manager')
+    result = connection.exec("SELECT * FROM bookmarks;")
+    result.map { |bookmark| bookmark['url'] }
+    # result.map { |bookmark| bookmark['name'] }
   end
 
   def ==(other_object)

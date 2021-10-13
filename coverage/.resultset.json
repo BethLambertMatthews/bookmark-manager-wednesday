@@ -3,16 +3,16 @@
     "coverage": {
       "/Users/bethlambertmatthews/Programming/pair-programming/bookmark-manager-wednesday/spec/features/bookmarks_spec.rb": {
         "lines": [
-          1,
-          1,
-          1,
-          0,
-          0,
-          0,
           null,
-          0,
-          0,
-          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
           null,
           null
         ]
@@ -36,15 +36,25 @@
           1,
           1,
           1,
-          1,
-          1,
-          1,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
           null,
           null,
           null
         ]
       }
     },
-    "timestamp": 1634135400
+    "timestamp": 1634138122
   }
 }

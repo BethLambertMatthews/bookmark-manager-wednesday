@@ -4,10 +4,20 @@ RSpec.describe Bookmark do
 
   describe '#all' do
     it 'returns an array of bookmarks' do
-      bookmark_1 = Bookmark.new('Makers', 'www.makersacademy.com')
-      bookmark_2 = Bookmark.new('Google', 'www.google.com')
-      bookmark_3 = Bookmark.new('Destroy', 'www.destroyallsoftware.com')
-    expect(Bookmark.all).to eq [bookmark_1, bookmark_2, bookmark_3]
+    expect(Bookmark.all).to include "http://www.makersacademy.com/"
+    expect(Bookmark.all).to include "http://www.destroyallsoftware.com/"
+
     end
   end
+
+  # describe '.all' do
+  #   it 'returns a list of bookmarks' do
+  #     bookmarks = Bookmark.all
+  
+  #     expect(bookmarks).to include "http://makers.tech"
+  #     expect(bookmarks).to include "http://www.destroyallsoftware.com"
+  #     expect(bookmarks).to include "http://www.google.com"
+  #   end
+  # end
+
 end
