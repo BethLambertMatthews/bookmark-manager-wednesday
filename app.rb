@@ -11,6 +11,12 @@ class BookmarkManager < Sinatra::Base
     "Bookmark Manager"
   end
 
+  get '/bookmarks' do
+    "http://www.makersacademy.com, http://www.destroyallsoftware.com, http://www.google.com"
+  end
+
+
+
   # get '/bookmarks' do
   #   @bookmarks_list = Bookmark.all
   #   erb(:bookmarks)
