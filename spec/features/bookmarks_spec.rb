@@ -1,3 +1,6 @@
+# VERSION DEVELOPED WITH STEVE on Tues 12 Oct. 
+# Assumes that the names of the bookmarks appear on the page, with links to the urls.
+
 # feature 'See a list of bookmarks: ' do
 #   scenario 'user can visit the page and see a list of bookmarks' do
 #     visit('/bookmarks')

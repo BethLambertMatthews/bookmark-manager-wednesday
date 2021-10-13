@@ -1,9 +1,8 @@
-# at the top of spec/spec_helper.rb
-
-# Set the environment to "test"
+# Set the environment to "test" - required by Capybara?
 ENV['RACK_ENV'] = 'test'
 
-# Bring in the contents of the `app.rb` file. The below is equivalent to: require_relative '../app.rb'
+# Bring in the contents of the 'app.rb' file. 
+# Alternative syntax could be: require_relative '../app.rb'
 require File.join(File.dirname(__FILE__), '..', 'app.rb')
 
 # Require all the testing gems
@@ -14,6 +13,7 @@ require 'simplecov'
 require 'simplecov-console'
 
 # Tell Capybara to talk to BookmarkManager
+# Any instructions like visit('/') should be directed at the application called 'BookmarkManager'
 Capybara.app = BookmarkManager
 
 SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([

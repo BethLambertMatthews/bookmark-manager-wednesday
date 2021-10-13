@@ -68,5 +68,9 @@ However - not sure how to return a map that can cope with the names columns as w
 
 So: refactor database structure, bookmark class and tests to output ONLY urls at the moment. Simpler to test?
 
+## First step
+
+Looking at unit tests. bookmark_spec.rb
+
 
 

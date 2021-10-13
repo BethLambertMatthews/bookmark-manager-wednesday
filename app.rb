@@ -8,17 +8,15 @@ class BookmarkManager < Sinatra::Base
   end
 
   get '/' do
-    "Hello World"
+    "Bookmark Manager"
   end
 
-  get '/index' do
-    erb(:index)
-  end
-
-  get '/bookmarks' do
-    @bookmarks_list = Bookmark.all
-    erb(:bookmarks)
-  end
+  # get '/bookmarks' do
+  #   @bookmarks_list = Bookmark.all
+  #   erb(:bookmarks)
+  # end
 
   run! if app_file == $0
+  # check this syntax - run if the app_file is this file?
+  
 end
