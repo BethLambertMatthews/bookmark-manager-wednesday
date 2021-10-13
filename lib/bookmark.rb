@@ -8,10 +8,14 @@ class Bookmark
   end
 
   def self.all
-    bookmark_1 = Bookmark.new('Google', 'www.google.co.uk')
-    bookmark_2 = Bookmark.new('Github', 'www.github.com')
-    bookmark_3 = Bookmark.new('Amazon', 'www.amazon.co.uk')
-    return [bookmark_1, bookmark_2, bookmark_3]
+    # bookmark_1 = Bookmark.new('Google', 'www.google.co.uk')
+    # bookmark_2 = Bookmark.new('Github', 'www.github.com')
+    # bookmark_3 = Bookmark.new('Amazon', 'www.amazon.co.uk')
+    # return [bookmark_1, bookmark_2, bookmark_3]
+
+    # CALL THE DATABASE HERE
+
+    
   end
 
   def ==(other_object)
