@@ -12,7 +12,7 @@ class BookmarkManager < Sinatra::Base
   end
 
   get '/bookmarks' do
-    "http://www.makersacademy.com, http://www.destroyallsoftware.com, http://www.google.com"
+    erb(:bookmarks)
   end
 
 
