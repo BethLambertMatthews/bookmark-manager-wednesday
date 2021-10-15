@@ -71,6 +71,20 @@ So: refactor database structure, bookmark class and tests to output ONLY urls at
 ## First step
 
 Looking at unit tests. bookmark_spec.rb
+Work on Bookmark class
 
+# UPDATE FRI 15 OCT
+
+Added db commands
+
+From walkthrough: 
+```
+"This is a start, but it's not enough to simply record the SQL queries, the README needs to be updated with instructions on how to use these. Anyone needing to setup the database from scratch will need to do the following things:
+
+Connect to psql
+Create the database using the psql command CREATE DATABASE bookmark_manager;
+Connect to the database using the pqsl command \c bookmark_manager;
+Run the query we have saved in the file 01_create_bookmarks_table.sql
+```
 
 
