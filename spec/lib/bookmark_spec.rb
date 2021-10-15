@@ -1,23 +1,26 @@
-# require 'bookmark'
+# Unit tests for the Bookmark class
+# Part of Chapter 3
+# "Test drive a refactor of the code to use a Model, that returns the list of bookmarks."
 
-# RSpec.describe Bookmark do
+require 'bookmark'
 
-#   describe '#all' do
-#     it 'returns an array of bookmarks' do
-#     expect(Bookmark.all).to include "http://www.makersacademy.com/"
-#     expect(Bookmark.all).to include "http://www.destroyallsoftware.com/"
+RSpec.describe Bookmark do
 
-#     end
-#   end
+  describe '#all' do
+    it 'returns all bookmarks' do
+      all_bookmarks = Bookmark.all
+      expect(all_bookmarks).to include("http://www.makersacademy.com")
+      expect(all_bookmarks).to include("http://www.destroyallsoftware.com")
+      expect(all_bookmarks).to include("http://www.google.com")
+    end
 
-#   # describe '.all' do
-#   #   it 'returns a list of bookmarks' do
-#   #     bookmarks = Bookmark.all
-  
-#   #     expect(bookmarks).to include "http://makers.tech"
-#   #     expect(bookmarks).to include "http://www.destroyallsoftware.com"
-#   #     expect(bookmarks).to include "http://www.google.com"
-#   #   end
-#   # end
+    it 'returns an array containing all bookmarks' do
+      all_bookmarks = Bookmark.all
+      expect(all_bookmarks). to eq(["http://www.makersacademy.com", "http://www.destroyallsoftware.com", "http://www.google.com"])
+    end
 
-# end
+  end
+
+
+
+end
